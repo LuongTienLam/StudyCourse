@@ -1,1 +1,2 @@
 2026-03-05: Add password reset notification email template
+2026-03-05: Add login rate limiting for security
