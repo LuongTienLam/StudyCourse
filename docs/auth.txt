@@ -2,3 +2,4 @@
 2026-03-05: Add login rate limiting for security
 2026-03-06: Add login rate limiting for security
 2026-03-06: Fix user registration fields redirection bug
+2026-03-07: Add password reset notification email template
