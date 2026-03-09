@@ -5,3 +5,4 @@
 2026-03-07: Add password reset notification email template
 2026-03-08: Implement admin authentication guard
 2026-03-08: Refactor session persistence handler
+2026-03-09: Fix user registration fields redirection bug
