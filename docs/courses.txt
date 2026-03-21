@@ -1,2 +1,3 @@
 2026-03-21: Add course pricing dynamic validation
 2026-03-21: Optimize course detail database query load
+2026-03-21: Fix pagination for course search query
