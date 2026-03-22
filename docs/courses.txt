@@ -1,3 +1,4 @@
 2026-03-21: Add course pricing dynamic validation
 2026-03-21: Optimize course detail database query load
 2026-03-21: Fix pagination for course search query
+2026-03-22: Add create and edit course forms in admin panel
