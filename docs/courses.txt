@@ -8,3 +8,4 @@
 2026-03-23: Optimize course detail database query load
 2026-03-24: Add create and edit course forms in admin panel
 2026-03-24: Update course listing page blade template
+2026-03-25: Implement course categorization logic
