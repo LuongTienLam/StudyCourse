@@ -11,3 +11,4 @@
 2026-03-25: Implement course categorization logic
 2026-03-25: Add create and edit course forms in admin panel
 2026-03-26: Optimize course detail database query load
+2026-03-26: Implement course image upload validation
