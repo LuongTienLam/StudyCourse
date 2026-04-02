@@ -28,3 +28,4 @@
 2026-04-01: Implement course categorization logic
 2026-04-02: Implement course image upload validation
 2026-04-02: Optimize course detail database query load
+2026-04-02: Fix pagination for course search query
