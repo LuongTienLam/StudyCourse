@@ -31,3 +31,4 @@
 2026-04-02: Fix pagination for course search query
 2026-04-03: Optimize course detail database query load
 2026-04-04: Optimize course detail database query load
+2026-04-04: Optimize course detail database query load
