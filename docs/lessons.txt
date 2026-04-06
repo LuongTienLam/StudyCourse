@@ -1,1 +1,2 @@
 2026-04-06: Add lesson completion tracking table
+2026-04-06: Implement next lesson redirection logic
