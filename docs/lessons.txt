@@ -2,3 +2,4 @@
 2026-04-06: Implement next lesson redirection logic
 2026-04-07: Fix lesson description markup parsing
 2026-04-07: Optimize lesson video loading performance
+2026-04-07: Implement next lesson redirection logic
