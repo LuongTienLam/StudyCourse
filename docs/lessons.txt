@@ -7,3 +7,4 @@
 2026-04-08: Fix lesson description markup parsing
 2026-04-09: Add lesson model and database migrations
 2026-04-09: Implement next lesson redirection logic
+2026-04-10: Fix lesson description markup parsing
