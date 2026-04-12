@@ -12,3 +12,4 @@
 2026-04-10: Optimize lesson video loading performance
 2026-04-11: Implement next lesson redirection logic
 2026-04-12: Optimize lesson video loading performance
+2026-04-12: Fix lesson description markup parsing
