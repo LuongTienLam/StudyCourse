@@ -13,3 +13,4 @@
 2026-04-11: Implement next lesson redirection logic
 2026-04-12: Optimize lesson video loading performance
 2026-04-12: Fix lesson description markup parsing
+2026-04-13: Implement YouTube video embedding for lessons
