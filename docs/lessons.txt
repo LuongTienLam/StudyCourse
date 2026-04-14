@@ -15,3 +15,4 @@
 2026-04-12: Fix lesson description markup parsing
 2026-04-13: Implement YouTube video embedding for lessons
 2026-04-13: Implement YouTube video embedding for lessons
+2026-04-14: Optimize lesson video loading performance
