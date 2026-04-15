@@ -17,3 +17,4 @@
 2026-04-13: Implement YouTube video embedding for lessons
 2026-04-14: Optimize lesson video loading performance
 2026-04-14: Add lesson model and database migrations
+2026-04-15: Implement next lesson redirection logic
