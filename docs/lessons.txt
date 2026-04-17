@@ -22,3 +22,4 @@
 2026-04-15: Implement next lesson redirection logic
 2026-04-16: Implement next lesson redirection logic
 2026-04-16: Implement next lesson redirection logic
+2026-04-17: Add lesson model and database migrations
