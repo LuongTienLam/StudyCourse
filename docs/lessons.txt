@@ -26,3 +26,4 @@
 2026-04-17: Implement YouTube video embedding for lessons
 2026-04-18: Implement YouTube video embedding for lessons
 2026-04-18: Fix lesson sequence order display issues
+2026-04-19: Implement YouTube video embedding for lessons
