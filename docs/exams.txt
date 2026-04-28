@@ -13,3 +13,4 @@
 2026-04-26: Fix score calculation for multiple choices questions
 2026-04-27: Setup exam creation and question relation
 2026-04-27: Add question level difficulty flag
+2026-04-28: Implement quiz timing functionality and auto-submit
