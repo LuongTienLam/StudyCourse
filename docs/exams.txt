@@ -21,3 +21,4 @@
 2026-05-01: Implement quiz result dashboard view
 2026-05-02: Fix score calculation for multiple choices questions
 2026-05-03: Add question level difficulty flag
+2026-05-04: Fix score calculation for multiple choices questions
