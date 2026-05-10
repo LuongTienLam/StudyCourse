@@ -33,3 +33,4 @@
 2026-05-08: Add question import from excel template helper
 2026-05-08: Refactor exam questions database relation
 2026-05-09: Fix score calculation for multiple choices questions
+2026-05-10: Fix score calculation for multiple choices questions
