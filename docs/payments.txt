@@ -1,2 +1,3 @@
 2026-05-11: Integrate VNPAY sandbox payment gateway
 2026-05-12: Implement secure signature verification for VNPAY
+2026-05-12: Add email invoice notification on payment success
