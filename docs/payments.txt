@@ -17,3 +17,4 @@
 2026-05-19: Fix amount format validation in checkout controller
 2026-05-19: Fix payment logging details configuration
 2026-05-19: Implement transaction status callback webhook
+2026-05-20: Implement secure signature verification for VNPAY
