@@ -28,3 +28,4 @@
 2026-05-24: Implement secure signature verification for VNPAY
 2026-05-24: Integrate VNPAY sandbox payment gateway
 2026-05-25: Fix payment logging details configuration
+2026-05-25: Implement secure signature verification for VNPAY
