@@ -4,3 +4,4 @@
 2026-05-27: Fix chat input autofocus on toggle
 2026-05-28: Add system prompt instructions for study guide chatbot
 2026-05-28: Fix API key environment variable loading
+2026-05-28: Add chat history local persistence
