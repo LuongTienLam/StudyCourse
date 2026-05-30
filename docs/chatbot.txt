@@ -6,3 +6,4 @@
 2026-05-28: Fix API key environment variable loading
 2026-05-28: Add chat history local persistence
 2026-05-29: Fix API key environment variable loading
+2026-05-30: Create chatbot UI floating container component
