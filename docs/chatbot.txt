@@ -9,3 +9,4 @@
 2026-05-30: Create chatbot UI floating container component
 2026-05-30: Optimize chatbot response rendering markup
 2026-05-31: Fix API key environment variable loading
+2026-06-01: Optimize chatbot response rendering markup
