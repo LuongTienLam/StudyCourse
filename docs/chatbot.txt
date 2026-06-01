@@ -10,3 +10,4 @@
 2026-05-30: Optimize chatbot response rendering markup
 2026-05-31: Fix API key environment variable loading
 2026-06-01: Optimize chatbot response rendering markup
+2026-06-01: Add system prompt instructions for study guide chatbot
