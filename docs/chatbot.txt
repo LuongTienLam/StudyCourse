@@ -14,3 +14,4 @@
 2026-06-02: Add system prompt instructions for study guide chatbot
 2026-06-02: Optimize chatbot response rendering markup
 2026-06-03: Fix API key environment variable loading
+2026-06-03: Integrate Gemini API chatbot assistant
