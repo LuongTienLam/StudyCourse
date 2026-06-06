@@ -1,0 +1,22 @@
+2026-05-26: Add system prompt instructions for study guide chatbot
+2026-05-26: Fix API key environment variable loading
+2026-05-27: Integrate Gemini API chatbot assistant
+2026-05-27: Fix chat input autofocus on toggle
+2026-05-28: Add system prompt instructions for study guide chatbot
+2026-05-28: Fix API key environment variable loading
+2026-05-28: Add chat history local persistence
+2026-05-29: Fix API key environment variable loading
+2026-05-30: Create chatbot UI floating container component
+2026-05-30: Optimize chatbot response rendering markup
+2026-05-31: Fix API key environment variable loading
+2026-06-01: Optimize chatbot response rendering markup
+2026-06-01: Add system prompt instructions for study guide chatbot
+2026-06-02: Add system prompt instructions for study guide chatbot
+2026-06-02: Optimize chatbot response rendering markup
+2026-06-03: Fix API key environment variable loading
+2026-06-03: Integrate Gemini API chatbot assistant
+2026-06-04: Add system prompt instructions for study guide chatbot
+2026-06-04: Optimize chatbot response rendering markup
+2026-06-05: Fix chat input autofocus on toggle
+2026-06-05: Fix API key environment variable loading
+2026-06-05: Implement streaming response simulation for chat
