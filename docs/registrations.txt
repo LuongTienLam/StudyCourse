@@ -1,2 +1,3 @@
 2026-06-06: Add student registration table and migration
 2026-06-06: Add email confirmation upon successful registration
+2026-06-06: Implement registration reports data exporter
