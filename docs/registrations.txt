@@ -5,3 +5,4 @@
 2026-06-07: Implement registration reports data exporter
 2026-06-08: Add email confirmation upon successful registration
 2026-06-09: Add email confirmation upon successful registration
+2026-06-09: Implement registration reports data exporter
