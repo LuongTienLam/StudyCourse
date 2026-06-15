@@ -1,0 +1,36 @@
+2026-04-21: Implement quiz timing functionality and auto-submit
+2026-04-21: Implement quiz result dashboard view
+2026-04-22: Implement quiz timing functionality and auto-submit
+2026-04-22: Add question import from excel template helper
+2026-04-22: Implement quiz timing functionality and auto-submit
+2026-04-23: Setup exam creation and question relation
+2026-04-24: Add question import from excel template helper
+2026-04-24: Add locking mechanism for submitted exams
+2026-04-25: Setup exam creation and question relation
+2026-04-25: Refactor exam questions database relation
+2026-04-25: Add question level difficulty flag
+2026-04-26: Add question import from excel template helper
+2026-04-26: Fix score calculation for multiple choices questions
+2026-04-27: Setup exam creation and question relation
+2026-04-27: Add question level difficulty flag
+2026-04-28: Implement quiz timing functionality and auto-submit
+2026-04-28: Implement quiz result dashboard view
+2026-04-28: Setup exam creation and question relation
+2026-04-29: Implement quiz result dashboard view
+2026-04-30: Setup exam creation and question relation
+2026-05-01: Implement quiz result dashboard view
+2026-05-02: Fix score calculation for multiple choices questions
+2026-05-03: Add question level difficulty flag
+2026-05-04: Fix score calculation for multiple choices questions
+2026-05-04: Fix score calculation for multiple choices questions
+2026-05-05: Implement quiz timing functionality and auto-submit
+2026-05-06: Add question import from excel template helper
+2026-05-06: Setup exam creation and question relation
+2026-05-06: Add question level difficulty flag
+2026-05-07: Add question level difficulty flag
+2026-05-07: Add question import from excel template helper
+2026-05-08: Add question import from excel template helper
+2026-05-08: Add question import from excel template helper
+2026-05-08: Refactor exam questions database relation
+2026-05-09: Fix score calculation for multiple choices questions
+2026-05-10: Fix score calculation for multiple choices questions

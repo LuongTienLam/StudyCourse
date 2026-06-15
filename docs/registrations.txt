@@ -1,0 +1,12 @@
+2026-06-06: Add student registration table and migration
+2026-06-06: Add email confirmation upon successful registration
+2026-06-06: Implement registration reports data exporter
+2026-06-07: Implement registration reports data exporter
+2026-06-07: Implement registration reports data exporter
+2026-06-08: Add email confirmation upon successful registration
+2026-06-09: Add email confirmation upon successful registration
+2026-06-09: Implement registration reports data exporter
+2026-06-10: Fix registration status update in admin panel
+2026-06-11: Add email confirmation upon successful registration
+2026-06-11: Add email confirmation upon successful registration
+2026-06-12: Implement registration reports data exporter
