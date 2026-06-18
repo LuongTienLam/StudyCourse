@@ -1,0 +1,297 @@
+/* =========================================
+   NEW BEAUTIFUL UI FOR HOME & APP LAYOUT
+   ========================================= */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8fafc;
+}
+
+/* Header & Navbar */
+.main-header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 10px 0;
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-logo img {
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.brand-logo img:hover {
+    transform: scale(1.05);
+}
+
+.main-menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu-item {
+    display: flex;
+    align-items: center;
+}
+
+.main-menu-link {
+    text-decoration: none !important;
+    color: #475569;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.main-menu-link:hover, .main-menu-link.active {
+    color: #4f46e5;
+}
+
+.login-btn {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: #fff !important;
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none !important;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.login-btn:hover {
+    box-shadow: 0 8px 20px rgba(79, 70, 229, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Hero Banner */
+.hero-banner {
+    height: 400px;
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.8), rgba(124, 58, 237, 0.8)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 50px 50px;
+    margin-bottom: 60px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Course Section */
+.course-section {
+    padding: 20px 0 80px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.section-line {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #4f46e5, #7c3aed);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/* Course Card */
+.course-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0,0,0,0.02);
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(79, 70, 229, 0.15);
+}
+
+.course-icon {
+    position: relative;
+    overflow: hidden;
+}
+
+.course-icon img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.course-card:hover .course-icon img {
+    transform: scale(1.08);
+}
+
+.course-body {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.course-price {
+    background: rgba(79, 70, 229, 0.1);
+    color: #4f46e5;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    display: inline-block;
+    align-self: flex-start;
+    margin-bottom: 15px;
+}
+
+.course-name {
+    margin-bottom: 10px;
+}
+
+.course-name a {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f172a;
+    text-decoration: none !important;
+    transition: color 0.3s ease;
+}
+
+.course-name a:hover {
+    color: #4f46e5;
+}
+
+.course-time {
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.course-time::before {
+    content: '\f017';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+}
+
+.course-desc {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    flex: 1;
+}
+
+.course-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: auto;
+}
+
+.btn-learn, .btn-enroll {
+    flex: 1;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-learn {
+    background: #f1f5f9;
+    color: #475569;
+}
+
+.btn-learn:hover {
+    background: #e2e8f0;
+    color: #0f172a;
+}
+
+.btn-enroll {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: #fff !important;
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+}
+
+.btn-enroll:hover {
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.5);
+    transform: translateY(-2px);
+}
+
+/* User Info Dropdown */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #1e293b;
+    font-weight: 600;
+    text-decoration: none !important;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e2e8f0;
+}
+
+/* Footer override */
+.footer-section {
+    background: #0f172a !important;
+    color: #cbd5e1 !important;
+    border-top: none !important;
+    padding-top: 50px;
+    height: auto !important;
+}
+
+.footer-item-title {
+    color: #fff !important;
+}
+
+.footer-title--separate::after {
+    border-bottom-color: #4f46e5 !important;
+}
+
+.footer-sub-icon {
+    color: #cbd5e1 !important;
+}
+
+.footer-sub-icon:hover {
+    color: #4f46e5 !important;
+}
