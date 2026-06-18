@@ -25,6 +25,10 @@ class AppServiceProvider extends ServiceProvider
     {
         error_reporting(E_ALL & ~E_DEPRECATED & ~E_USER_DEPRECATED);
 
+        if (config('app.env') === 'production') {
+            \Illuminate\Support\Facades\URL::forceScheme('https');
+        }
+
         // Ensure /tmp/storage/framework/views exists for Vercel view compilation
         $viewsPath = '/tmp/storage/framework/views';
         if (!is_dir($viewsPath)) {
