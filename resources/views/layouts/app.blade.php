@@ -38,19 +38,19 @@
 
                 <ul class="main-menu">
                     <li class="main-menu-item">
-                        <a href="{{ route('home') }}" class="main-menu-link active">HOME</a>
+                        <a href="{{ route('home') }}" class="main-menu-link {{ request()->routeIs('home') ? 'active' : '' }}">HOME</a>
                     </li>
                     <li class="main-menu-item">
-                        <a href="#" class="main-menu-link">ABOUT US</a>
+                        <a href="/#about-us" class="main-menu-link">ABOUT US</a>
                     </li>
                     <li class="main-menu-item">
-                        <a href="#" class="main-menu-link">COURSE</a>
+                        <a href="/#course-section" class="main-menu-link">COURSE</a>
                     </li>
                     <li class="main-menu-item">
-                        <a href="#" class="main-menu-link">NEWS</a>
+                        <a href="/#news" class="main-menu-link">NEWS</a>
                     </li>
                     <li class="main-menu-item">
-                        <a href="#" class="main-menu-link">CAREERS</a>
+                        <a href="/#careers" class="main-menu-link">CAREERS</a>
                     </li>
                 </ul>
 
