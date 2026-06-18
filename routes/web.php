@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GeminiController;
 
-Route::post('/chatbot/gemini', [GeminiController::class, 'chat']);
+Route::post('/chatbot/gemini', 'GeminiController@chat');
 
 // Home
 Route::get('/', 'HomeController@index')->name('home');
