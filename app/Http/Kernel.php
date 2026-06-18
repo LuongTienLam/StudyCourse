@@ -75,10 +75,10 @@ class Kernel extends HttpKernel
     {
         $bootstrappers = parent::bootstrappers();
 
-        // Inject custom bootstrapper to suppress deprecation warnings on PHP 8.1+
+        // Replace default HandleExceptions with our custom one to suppress deprecation warnings on PHP 8.2+
         $index = array_search(\Illuminate\Foundation\Bootstrap\HandleExceptions::class, $bootstrappers);
         if ($index !== false) {
-            array_splice($bootstrappers, $index + 1, 0, \App\Bootstrap\SuppressDeprecations::class);
+            $bootstrappers[$index] = \App\Bootstrap\HandleExceptions::class;
         }
 
         return $bootstrappers;
