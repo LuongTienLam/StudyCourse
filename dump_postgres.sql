@@ -12,10 +12,10 @@ BEGIN;
 
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+
+
+
+
 
 --
 -- Database: "courseonline"
@@ -120,7 +120,7 @@ CREATE TABLE "courses" (
   "name" varchar(255)  NOT NULL,
   "total_time" integer NOT NULL,
   "url_image" varchar(255)  NOT NULL,
-  "price" bigint(20) NOT NULL,
+  "price" bigint NOT NULL,
   "description" text  NOT NULL,
   "created_at" timestamp NULL DEFAULT NULL,
   "updated_at" timestamp NULL DEFAULT NULL
@@ -195,7 +195,7 @@ CREATE TABLE "failed_jobs" (
   "queue" text  NOT NULL,
   "payload" text  NOT NULL,
   "exception" text  NOT NULL,
-  "failed_at" timestamp NOT NULL DEFAULT current_timestamp()
+  "failed_at" timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
 -- --------------------------------------------------------
@@ -209,7 +209,7 @@ CREATE TABLE "lessons" (
   "course_id" bigint NOT NULL,
   "title" varchar(255)  NOT NULL,
   "description" varchar(255)  NOT NULL,
-  "link_video" mediumtext  NOT NULL,
+  "link_video" text  NOT NULL,
   "created_at" timestamp NULL DEFAULT NULL,
   "updated_at" timestamp NULL DEFAULT NULL
 );
@@ -219,14 +219,14 @@ CREATE TABLE "lessons" (
 --
 
 INSERT INTO "lessons" ("id", "course_id", "title", "description", "link_video", "created_at", "updated_at") VALUES
-(3, 1, 'Java Tutorial For Beginners 1 - Introduction and Installing the java (JDK) Step by Step Tutorial', 'Introduction and Installing the java (JDK) Step by Step Tutorial', '<iframe width="853" height="480" src="https://www.youtube.com/embed/r59xYe3Vyks?list=PLS1QulWo1RIbfTjQvTdj8Y6yyq4R7g-Al" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '2021-05-25 21:57:29', '2021-05-25 21:57:29'),
-(4, 1, 'Java Tutorial For Beginners 2 - Installing Eclipse IDE and Setting up Eclipse', 'Installing Eclipse IDE and Setting up Eclipse', '<iframe width="853" height="480" src="https://www.youtube.com/embed/gzlhm0jco0g?list=PLS1QulWo1RIbfTjQvTdj8Y6yyq4R7g-Al" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '2021-05-25 21:58:02', '2021-05-25 21:58:02'),
-(5, 1, 'Java Tutorial For Beginners 3 - Creating First Java Project in Eclipse IDE', 'Creating First Java Project in Eclipse IDE', '<iframe width="853" height="480" src="https://www.youtube.com/embed/U8wrZRYAnmI?list=PLS1QulWo1RIbfTjQvTdj8Y6yyq4R7g-Al" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '2021-05-25 21:58:28', '2021-05-25 21:58:28'),
-(6, 1, 'Java Tutorial For Beginners 4 - Variables and Types in Java', 'Variables and Types in Java', '<iframe width="853" height="480" src="https://www.youtube.com/embed/4ekASokneGU?list=PLS1QulWo1RIbfTjQvTdj8Y6yyq4R7g-Al" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '2021-05-25 21:58:50', '2021-05-25 21:58:50'),
-(7, 1, 'Java Tutorial For Beginners 5 - Getting User Input using Java', 'Getting User Input using Java', '<iframe width="853" height="480" src="https://www.youtube.com/embed/qgMH6jOOFOE?list=PLS1QulWo1RIbfTjQvTdj8Y6yyq4R7g-Al" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '2021-05-25 21:59:10', '2021-05-25 21:59:10'),
-(8, 1, 'Java Tutorial For Beginners 6 - Math and Arithmetic Operators in Java', 'Math and Arithmetic Operators in Java', '<iframe width="853" height="480" src="https://www.youtube.com/embed/ss7BtLrbxp4?list=PLS1QulWo1RIbfTjQvTdj8Y6yyq4R7g-Al" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '2021-05-25 21:59:34', '2021-05-25 21:59:34'),
-(9, 1, 'Java Tutorial For Beginners 7 - Increment Operator and Assignment Operator', 'Increment Operator and Assignment Operator', '<iframe width="853" height="480" src="https://www.youtube.com/embed/f5YdkIzNmfM?list=PLS1QulWo1RIbfTjQvTdj8Y6yyq4R7g-Al" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '2021-05-25 21:59:54', '2021-05-25 21:59:54'),
-(10, 1, 'Java Tutorial For Beginners 8 - IF ... ELSE Statements and Relational Operators', 'IF ... ELSE Statements and Relational Operators', '<iframe width="853" height="480" src="https://www.youtube.com/embed/WZXq5_9_JDs?list=PLS1QulWo1RIbfTjQvTdj8Y6yyq4R7g-Al" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '2021-05-25 22:00:23', '2021-05-25 22:00:23');
+(3, 1, 'Java Tutorial For Beginners 1 - Introduction and Installing the java (JDK) Step by Step Tutorial', 'Introduction and Installing the java (JDK) Step by Step Tutorial', '<iframe width=\"853\" height=\"480\" src=\"https://www.youtube.com/embed/r59xYe3Vyks?list=PLS1QulWo1RIbfTjQvTdj8Y6yyq4R7g-Al\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>', '2021-05-25 21:57:29', '2021-05-25 21:57:29'),
+(4, 1, 'Java Tutorial For Beginners 2 - Installing Eclipse IDE and Setting up Eclipse', 'Installing Eclipse IDE and Setting up Eclipse', '<iframe width=\"853\" height=\"480\" src=\"https://www.youtube.com/embed/gzlhm0jco0g?list=PLS1QulWo1RIbfTjQvTdj8Y6yyq4R7g-Al\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>', '2021-05-25 21:58:02', '2021-05-25 21:58:02'),
+(5, 1, 'Java Tutorial For Beginners 3 - Creating First Java Project in Eclipse IDE', 'Creating First Java Project in Eclipse IDE', '<iframe width=\"853\" height=\"480\" src=\"https://www.youtube.com/embed/U8wrZRYAnmI?list=PLS1QulWo1RIbfTjQvTdj8Y6yyq4R7g-Al\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>', '2021-05-25 21:58:28', '2021-05-25 21:58:28'),
+(6, 1, 'Java Tutorial For Beginners 4 - Variables and Types in Java', 'Variables and Types in Java', '<iframe width=\"853\" height=\"480\" src=\"https://www.youtube.com/embed/4ekASokneGU?list=PLS1QulWo1RIbfTjQvTdj8Y6yyq4R7g-Al\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>', '2021-05-25 21:58:50', '2021-05-25 21:58:50'),
+(7, 1, 'Java Tutorial For Beginners 5 - Getting User Input using Java', 'Getting User Input using Java', '<iframe width=\"853\" height=\"480\" src=\"https://www.youtube.com/embed/qgMH6jOOFOE?list=PLS1QulWo1RIbfTjQvTdj8Y6yyq4R7g-Al\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>', '2021-05-25 21:59:10', '2021-05-25 21:59:10'),
+(8, 1, 'Java Tutorial For Beginners 6 - Math and Arithmetic Operators in Java', 'Math and Arithmetic Operators in Java', '<iframe width=\"853\" height=\"480\" src=\"https://www.youtube.com/embed/ss7BtLrbxp4?list=PLS1QulWo1RIbfTjQvTdj8Y6yyq4R7g-Al\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>', '2021-05-25 21:59:34', '2021-05-25 21:59:34'),
+(9, 1, 'Java Tutorial For Beginners 7 - Increment Operator and Assignment Operator', 'Increment Operator and Assignment Operator', '<iframe width=\"853\" height=\"480\" src=\"https://www.youtube.com/embed/f5YdkIzNmfM?list=PLS1QulWo1RIbfTjQvTdj8Y6yyq4R7g-Al\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>', '2021-05-25 21:59:54', '2021-05-25 21:59:54'),
+(10, 1, 'Java Tutorial For Beginners 8 - IF ... ELSE Statements and Relational Operators', 'IF ... ELSE Statements and Relational Operators', '<iframe width=\"853\" height=\"480\" src=\"https://www.youtube.com/embed/WZXq5_9_JDs?list=PLS1QulWo1RIbfTjQvTdj8Y6yyq4R7g-Al\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>', '2021-05-25 22:00:23', '2021-05-25 22:00:23');
 
 -- --------------------------------------------------------
 
@@ -340,12 +340,12 @@ INSERT INTO "password_resets" ("email", "token", "created_at") VALUES
 CREATE TABLE "questions" (
   "id" BIGSERIAL PRIMARY KEY,
   "exam_id" bigint NOT NULL,
-  "name" mediumtext  NOT NULL,
-  "answer_1" mediumtext  NOT NULL,
-  "answer_2" mediumtext  NOT NULL,
-  "answer_3" mediumtext  NOT NULL,
-  "answer_4" mediumtext  NOT NULL,
-  "answer_right" mediumtext  NOT NULL,
+  "name" text  NOT NULL,
+  "answer_1" text  NOT NULL,
+  "answer_2" text  NOT NULL,
+  "answer_3" text  NOT NULL,
+  "answer_4" text  NOT NULL,
+  "answer_right" text  NOT NULL,
   "level" varchar(255)  NOT NULL,
   "created_at" timestamp NULL DEFAULT NULL,
   "updated_at" timestamp NULL DEFAULT NULL
@@ -393,14 +393,14 @@ INSERT INTO "questions" ("id", "exam_id", "name", "answer_1", "answer_2", "answe
 (35, 14, 'Which of the following is a valid syntax to synchronize the HashMap?', 'Map m = hashMap.synchronizeMap();', 'HashMap map =hashMap.synchronizeMap();', 'Map m1 = Collections.synchronizedMap(hashMap);', 'Map m2 = Collection.synchronizeMap(hashMap);', 'Map m1 = Collections.synchronizedMap(hashMap);', 'Medium', '2021-05-26 02:40:24', '2021-05-26 02:40:24'),
 (36, 14, 'Which of the following is a mutable class in java?', 'java.lang.String', 'java.lang.Byte', 'java.lang.Short', 'java.lang.StringBuilder', 'java.lang.StringBuilder', 'Medium', '2021-05-26 02:40:24', '2021-05-26 02:40:24'),
 (37, 14, 'What is meant by the classes and objects that dependents on each other?', 'Tight Coupling', 'Cohesion', 'Loose Coupling', 'None of the above', 'Tight Coupling', 'Medium', '2021-05-26 02:40:24', '2021-05-26 02:40:24'),
-(38, 14, 'Which of the following code segment would execute the stored procedure "getPassword()" located in a database server?', 'CallableStatement cs = connection.prepareCall("{call.getPassword()}");
-cs.executeQuery();', 'CallabledStatement callable = conn.prepareCall("{call getPassword()}");
-callable.executeUpdate();', 'CallableStatement cab = con.prepareCall("{call getPassword()}");
-cab.executeQuery();', 'Callablestatement cstate = connect.prepareCall("{call getpassword()}");
-cstate.executeQuery();', 'CallableStatement cs = connection.prepareCall("{call.getPassword()}");
+(38, 14, 'Which of the following code segment would execute the stored procedure \"getPassword()\" located in a database server?', 'CallableStatement cs = connection.prepareCall(\"{call.getPassword()}\");
+cs.executeQuery();', 'CallabledStatement callable = conn.prepareCall(\"{call getPassword()}\");
+callable.executeUpdate();', 'CallableStatement cab = con.prepareCall(\"{call getPassword()}\");
+cab.executeQuery();', 'Callablestatement cstate = connect.prepareCall(\"{call getpassword()}\");
+cstate.executeQuery();', 'CallableStatement cs = connection.prepareCall(\"{call.getPassword()}\");
 cs.executeQuery();', 'Medium', '2021-05-26 02:40:24', '2021-05-26 02:40:24'),
 (39, 14, 'How many threads can be executed at a time?', 'Only one thread', 'Multiple threads', 'Only main (main() method) thread', 'Two threads', 'Multiple threads', 'Medium', '2021-05-26 02:40:24', '2021-05-26 02:40:24'),
-(40, 14, 'Which of these is the most popularly used class as a key in a HashMap?', 'String', 'Integer', 'double precision', ' All of the above', 'String', 'Hard', '2021-05-26 02:40:24', '2021-05-26 02:40:24'),
+(40, 14, 'Which of these is the most popularly used class as a key in a HashMap?', 'String', 'Integer', 'Double', ' All of the above', 'String', 'Hard', '2021-05-26 02:40:24', '2021-05-26 02:40:24'),
 (41, 14, 'If three threads trying to share a single object at the same time, which condition will arise in this scenario?', 'Time-Lapse', 'Critical situation', 'Race condition', 'Recursion', 'Race condition', 'Hard', '2021-05-26 02:40:24', '2021-05-26 02:40:24'),
 (42, 14, 'If a thread goes to sleep', 'It releases all the locks it has.', 'It does not release any locks.', 'It releases half of its locks.', 'It releases all of its lock except one.', 'It does not release any locks.', 'Hard', '2021-05-26 02:40:24', '2021-05-26 02:40:24'),
 (43, 14, ' Which of the following modifiers can be used for a variable so that it can be accessed by any thread or a part of a program?', 'global', 'transient', 'volatile', 'default', 'volatile', 'Hard', '2021-05-26 02:40:24', '2021-05-26 02:40:24'),
@@ -417,7 +417,7 @@ CREATE TABLE "scores" (
   "id" BIGSERIAL PRIMARY KEY,
   "user_id" bigint NOT NULL,
   "exam_id" bigint NOT NULL,
-  "score" double precision precision NOT NULL,
+  "score" double precision NOT NULL,
   "created_at" timestamp NULL DEFAULT NULL,
   "updated_at" timestamp NULL DEFAULT NULL
 );
@@ -466,100 +466,73 @@ INSERT INTO "users" ("id", "fullname", "email", "phone", "birthday", "url_avatar
 --
 -- Indexes for table "admins"
 --
-ALTER TABLE "admins"
-  ADD PRIMARY KEY ("id");
 
 --
 -- Indexes for table "class_rooms"
 --
-ALTER TABLE "class_rooms"
-  ADD PRIMARY KEY ("id"),
-  ADD KEY "class_rooms_course_id_foreign" ("course_id");
+CREATE INDEX "class_rooms_course_id_foreign" ON "class_rooms" ("course_id");
 
 --
 -- Indexes for table "class_user"
 --
-ALTER TABLE "class_user"
-  ADD PRIMARY KEY ("id"),
-  ADD KEY "class_user_user_id_foreign" ("user_id"),
-  ADD KEY "class_user_class_id_foreign" ("class_id");
+CREATE INDEX "class_user_user_id_foreign" ON "class_user" ("user_id");
+CREATE INDEX "class_user_class_id_foreign" ON "class_user" ("class_id");
 
 --
 -- Indexes for table "courses"
 --
-ALTER TABLE "courses"
-  ADD PRIMARY KEY ("id"),
-  ADD KEY "courses_admin_id_foreign" ("admin_id");
+CREATE INDEX "courses_admin_id_foreign" ON "courses" ("admin_id");
 
 --
 -- Indexes for table "exams"
 --
-ALTER TABLE "exams"
-  ADD PRIMARY KEY ("id"),
-  ADD KEY "exams_course_id_foreign" ("course_id");
+CREATE INDEX "exams_course_id_foreign" ON "exams" ("course_id");
 
 --
 -- Indexes for table "failed_jobs"
 --
-ALTER TABLE "failed_jobs"
-  ADD PRIMARY KEY ("id");
 
 --
 -- Indexes for table "lessons"
 --
-ALTER TABLE "lessons"
-  ADD PRIMARY KEY ("id"),
-  ADD KEY "lessons_course_id_foreign" ("course_id");
+CREATE INDEX "lessons_course_id_foreign" ON "lessons" ("course_id");
 
 --
 -- Indexes for table "migrations"
 --
-ALTER TABLE "migrations"
-  ADD PRIMARY KEY ("id");
 
 --
 -- Indexes for table "note_generals"
 --
-ALTER TABLE "note_generals"
-  ADD PRIMARY KEY ("id"),
-  ADD KEY "note_generals_class_id_foreign" ("class_id"),
-  ADD KEY "note_generals_admin_id_foreign" ("admin_id");
+CREATE INDEX "note_generals_class_id_foreign" ON "note_generals" ("class_id");
+CREATE INDEX "note_generals_admin_id_foreign" ON "note_generals" ("admin_id");
 
 --
 -- Indexes for table "note_privates"
 --
-ALTER TABLE "note_privates"
-  ADD PRIMARY KEY ("id"),
-  ADD KEY "note_privates_user_id_foreign" ("user_id"),
-  ADD KEY "note_privates_admin_id_foreign" ("admin_id");
+CREATE INDEX "note_privates_user_id_foreign" ON "note_privates" ("user_id");
+CREATE INDEX "note_privates_admin_id_foreign" ON "note_privates" ("admin_id");
 
 --
 -- Indexes for table "password_resets"
 --
-ALTER TABLE "password_resets"
-  ADD KEY "password_resets_email_index" ("email");
+CREATE INDEX "password_resets_email_index" ON "password_resets" ("email");
 
 --
 -- Indexes for table "questions"
 --
-ALTER TABLE "questions"
-  ADD PRIMARY KEY ("id"),
-  ADD KEY "questions_exam_id_foreign" ("exam_id");
+CREATE INDEX "questions_exam_id_foreign" ON "questions" ("exam_id");
 
 --
 -- Indexes for table "scores"
 --
-ALTER TABLE "scores"
-  ADD PRIMARY KEY ("id"),
-  ADD KEY "scores_user_id_foreign" ("user_id"),
-  ADD KEY "scores_exam_id_foreign" ("exam_id");
+CREATE INDEX "scores_user_id_foreign" ON "scores" ("user_id");
+CREATE INDEX "scores_exam_id_foreign" ON "scores" ("exam_id");
 
 --
 -- Indexes for table "users"
 --
-ALTER TABLE "users"
-  ADD PRIMARY KEY ("id"),
-  ADD UNIQUE KEY "users_email_unique" ("email");
+ALTER TABLE "users" ADD CONSTRAINT "users_email_unique" UNIQUE ("email");
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -568,80 +541,54 @@ ALTER TABLE "users"
 --
 -- AUTO_INCREMENT for table "admins"
 --
-ALTER TABLE "admins"
-  MODIFY "id" bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table "class_rooms"
 --
-ALTER TABLE "class_rooms"
-  MODIFY "id" bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table "class_user"
 --
-ALTER TABLE "class_user"
-  MODIFY "id" bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table "courses"
 --
-ALTER TABLE "courses"
-  MODIFY "id" bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table "exams"
 --
-ALTER TABLE "exams"
-  MODIFY "id" bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table "failed_jobs"
 --
-ALTER TABLE "failed_jobs"
-  MODIFY "id" bigint NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table "lessons"
 --
-ALTER TABLE "lessons"
-  MODIFY "id" bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table "migrations"
 --
-ALTER TABLE "migrations"
-  MODIFY "id" bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table "note_generals"
 --
-ALTER TABLE "note_generals"
-  MODIFY "id" bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table "note_privates"
 --
-ALTER TABLE "note_privates"
-  MODIFY "id" bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table "questions"
 --
-ALTER TABLE "questions"
-  MODIFY "id" bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT for table "scores"
 --
-ALTER TABLE "scores"
-  MODIFY "id" bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table "users"
 --
-ALTER TABLE "users"
-  MODIFY "id" bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- Constraints for dumped tables
@@ -650,60 +597,51 @@ ALTER TABLE "users"
 --
 -- Constraints for table "class_rooms"
 --
-ALTER TABLE "class_rooms"
-  ADD CONSTRAINT "class_rooms_course_id_foreign" FOREIGN KEY ("course_id") REFERENCES "courses" ("id");
+ALTER TABLE "class_rooms" ADD CONSTRAINT "class_rooms_course_id_foreign" FOREIGN KEY ("course_id") REFERENCES "courses" ("id");
 
 --
 -- Constraints for table "class_user"
 --
-ALTER TABLE "class_user"
-  ADD CONSTRAINT "class_user_class_id_foreign" FOREIGN KEY ("class_id") REFERENCES "class_rooms" ("id"),
-  ADD CONSTRAINT "class_user_user_id_foreign" FOREIGN KEY ("user_id") REFERENCES "users" ("id");
+ALTER TABLE "class_user" ADD CONSTRAINT "class_user_class_id_foreign" FOREIGN KEY ("class_id") REFERENCES "class_rooms" ("id");
+ALTER TABLE "class_user" ADD CONSTRAINT "class_user_user_id_foreign" FOREIGN KEY ("user_id") REFERENCES "users" ("id");
 
 --
 -- Constraints for table "courses"
 --
-ALTER TABLE "courses"
-  ADD CONSTRAINT "courses_admin_id_foreign" FOREIGN KEY ("admin_id") REFERENCES "admins" ("id");
+ALTER TABLE "courses" ADD CONSTRAINT "courses_admin_id_foreign" FOREIGN KEY ("admin_id") REFERENCES "admins" ("id");
 
 --
 -- Constraints for table "exams"
 --
-ALTER TABLE "exams"
-  ADD CONSTRAINT "exams_course_id_foreign" FOREIGN KEY ("course_id") REFERENCES "courses" ("id");
+ALTER TABLE "exams" ADD CONSTRAINT "exams_course_id_foreign" FOREIGN KEY ("course_id") REFERENCES "courses" ("id");
 
 --
 -- Constraints for table "lessons"
 --
-ALTER TABLE "lessons"
-  ADD CONSTRAINT "lessons_course_id_foreign" FOREIGN KEY ("course_id") REFERENCES "courses" ("id");
+ALTER TABLE "lessons" ADD CONSTRAINT "lessons_course_id_foreign" FOREIGN KEY ("course_id") REFERENCES "courses" ("id");
 
 --
 -- Constraints for table "note_generals"
 --
-ALTER TABLE "note_generals"
-  ADD CONSTRAINT "note_generals_admin_id_foreign" FOREIGN KEY ("admin_id") REFERENCES "admins" ("id"),
-  ADD CONSTRAINT "note_generals_class_id_foreign" FOREIGN KEY ("class_id") REFERENCES "class_rooms" ("id");
+ALTER TABLE "note_generals" ADD CONSTRAINT "note_generals_admin_id_foreign" FOREIGN KEY ("admin_id") REFERENCES "admins" ("id");
+ALTER TABLE "note_generals" ADD CONSTRAINT "note_generals_class_id_foreign" FOREIGN KEY ("class_id") REFERENCES "class_rooms" ("id");
 
 --
 -- Constraints for table "note_privates"
 --
-ALTER TABLE "note_privates"
-  ADD CONSTRAINT "note_privates_admin_id_foreign" FOREIGN KEY ("admin_id") REFERENCES "admins" ("id"),
-  ADD CONSTRAINT "note_privates_user_id_foreign" FOREIGN KEY ("user_id") REFERENCES "users" ("id");
+ALTER TABLE "note_privates" ADD CONSTRAINT "note_privates_admin_id_foreign" FOREIGN KEY ("admin_id") REFERENCES "admins" ("id");
+ALTER TABLE "note_privates" ADD CONSTRAINT "note_privates_user_id_foreign" FOREIGN KEY ("user_id") REFERENCES "users" ("id");
 
 --
 -- Constraints for table "questions"
 --
-ALTER TABLE "questions"
-  ADD CONSTRAINT "questions_exam_id_foreign" FOREIGN KEY ("exam_id") REFERENCES "exams" ("id");
+ALTER TABLE "questions" ADD CONSTRAINT "questions_exam_id_foreign" FOREIGN KEY ("exam_id") REFERENCES "exams" ("id");
 
 --
 -- Constraints for table "scores"
 --
-ALTER TABLE "scores"
-  ADD CONSTRAINT "scores_exam_id_foreign" FOREIGN KEY ("exam_id") REFERENCES "exams" ("id"),
-  ADD CONSTRAINT "scores_user_id_foreign" FOREIGN KEY ("user_id") REFERENCES "users" ("id");
+ALTER TABLE "scores" ADD CONSTRAINT "scores_exam_id_foreign" FOREIGN KEY ("exam_id") REFERENCES "exams" ("id");
+ALTER TABLE "scores" ADD CONSTRAINT "scores_user_id_foreign" FOREIGN KEY ("user_id") REFERENCES "users" ("id");
 SELECT setval(pg_get_serial_sequence('admins', 'id'), coalesce(max(id), 1)) FROM admins;
 SELECT setval(pg_get_serial_sequence('class_rooms', 'id'), coalesce(max(id), 1)) FROM class_rooms;
 SELECT setval(pg_get_serial_sequence('class_user', 'id'), coalesce(max(id), 1)) FROM class_user;
@@ -719,6 +657,6 @@ SELECT setval(pg_get_serial_sequence('scores', 'id'), coalesce(max(id), 1)) FROM
 SELECT setval(pg_get_serial_sequence('users', 'id'), coalesce(max(id), 1)) FROM users;
 COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+

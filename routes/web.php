@@ -5,21 +5,6 @@ use App\Http\Controllers\GeminiController;
 
 Route::post('/chatbot/gemini', [GeminiController::class, 'chat']);
 
-Route::get('/test-db', function() {
-    try {
-        $tables = Illuminate\Support\Facades\DB::select("SELECT table_name FROM information_schema.tables WHERE table_schema = 'public'");
-        return response()->json([
-            'status' => 'success',
-            'tables' => array_column($tables, 'table_name')
-        ]);
-    } catch (\Exception $e) {
-        return response()->json([
-            'status' => 'error',
-            'message' => $e->getMessage()
-        ], 500);
-    }
-});
-
 // Home
 Route::get('/', 'HomeController@index')->name('home');
 
