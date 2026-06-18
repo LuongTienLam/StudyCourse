@@ -1,3 +1,5 @@
+<?php
+
 namespace App\Http\Controllers;
 
 use App\Registration;
@@ -26,7 +28,7 @@ class RegistrationController extends Controller
             'birthday' => $request->birthday,
             'email' => $request->email,
             'phone' => $request->phone,
-            'amount' => 1000000, // tạm thời hard-code, sau sẽ lấy từ course
+            'amount' => $course->price,
             'payment_status' => 'pending',
             'payment_note' => 'Chưa thanh toán',
         ]);

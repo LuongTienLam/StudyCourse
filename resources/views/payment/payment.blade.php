@@ -36,22 +36,11 @@
     {{-- 🟢 BÊN PHẢI --}}
     <div style="flex:1; text-align:center; background:white; padding:35px; border-radius:12px; box-shadow:0 0 15px rgba(0,0,0,0.1);">
 
-        <h3 style="font-size:24px;">Quét mã QR để thanh toán</h3>
-
-        <img 
-            src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data={{ urlencode('http://172.20.10.2:8000/mobile-pay/'.$registration->id) }}" 
-            alt="QR Code Payment"
-        >
+        <h3 style="font-size:24px;">Thanh toán Online an toàn</h3>
+        <p style="color: gray; margin-bottom: 20px;">Hỗ trợ thanh toán qua thẻ ATM nội địa, Visa/Mastercard, VNPay QR.</p>
 
         {{-- BUTTONS --}}
-        <div style="display: flex; justify-content: center; gap: 15px; margin-top: 20px;">
-            <form method="POST" action="{{ url('/payment/confirm/'.$registration->id) }}">
-                @csrf
-                <button style="padding:14px 30px; font-size:16px; background:green; color:white; border:none; border-radius:6px; cursor:pointer;">
-                    Tôi đã chuyển khoản
-                </button>
-            </form>
-
+        <div style="display: flex; justify-content: center; margin-top: 20px;">
             <form method="POST" action="{{ route('payment.vnpay', $registration->id) }}">
                 @csrf
                 <button style="padding:14px 30px; font-size:16px; background:#005baa; color:white; border:none; border-radius:6px; cursor:pointer; font-weight:bold;">

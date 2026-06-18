@@ -61,15 +61,15 @@ class PaymentController extends Controller
     {
         $registration = Registration::findOrFail($id);
         
-        $vnp_Url = config('vnpay.url');
-        $vnp_Returnurl = config('vnpay.return_url');
-        $vnp_TmnCode = config('vnpay.tmn_code');
-        $vnp_HashSecret = config('vnpay.hash_secret');
+        $vnp_Url = trim(config('vnpay.url'));
+        $vnp_Returnurl = trim(config('vnpay.return_url'));
+        $vnp_TmnCode = trim(config('vnpay.tmn_code'));
+        $vnp_HashSecret = trim(config('vnpay.hash_secret'));
 
         $vnp_TxnRef = $registration->id . '_' . time(); 
-        $vnp_OrderInfo = 'Thanh toan khoa hoc ' . $registration->course->name;
+        $vnp_OrderInfo = 'Payment_registration_id_' . $registration->id;
         $vnp_OrderType = 'billpayment';
-        $vnp_Amount = $registration->amount * 100;
+        $vnp_Amount = intval($registration->amount * 100);
         $vnp_Locale = 'vn';
         $vnp_IpAddr = $request->ip();
         
@@ -106,6 +106,16 @@ class PaymentController extends Controller
         if (isset($vnp_HashSecret)) {
             $vnpSecureHash =   hash_hmac('sha512', $hashdata, $vnp_HashSecret);
             $vnp_Url .= 'vnp_SecureHash=' . $vnpSecureHash;
+        }
+
+        if ($request->has('debug')) {
+            dd([
+                'vnp_TmnCode' => $vnp_TmnCode,
+                'vnp_HashSecret' => $vnp_HashSecret,
+                'hashdata' => $hashdata,
+                'vnpSecureHash_generated' => $vnpSecureHash,
+                'full_url' => $vnp_Url
+            ]);
         }
         
         return redirect($vnp_Url);
