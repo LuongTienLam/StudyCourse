@@ -45,4 +45,40 @@
     </div>
 </section>
 
+<section class="course-section" id="about-us">
+    <div class="section-title">
+        <h2>ABOUT US</h2>
+        <div class="section-line"></div>
+    </div>
+    <div class="row">
+        <div class="col-12 text-center" style="padding: 40px 20px;">
+            <p style="font-size: 18px; color: #555;">Welcome to Skylab Coding. We provide the best online courses for your career development.</p>
+        </div>
+    </div>
+</section>
+
+<section class="course-section" id="news">
+    <div class="section-title">
+        <h2>NEWS</h2>
+        <div class="section-line"></div>
+    </div>
+    <div class="row">
+        <div class="col-12 text-center" style="padding: 40px 20px;">
+            <p style="font-size: 18px; color: #555;">Stay tuned for our latest updates, events, and tech news.</p>
+        </div>
+    </div>
+</section>
+
+<section class="course-section" id="careers">
+    <div class="section-title">
+        <h2>CAREERS</h2>
+        <div class="section-line"></div>
+    </div>
+    <div class="row">
+        <div class="col-12 text-center" style="padding: 40px 20px;">
+            <p style="font-size: 18px; color: #555;">Join our team! Check out the open positions below and apply today.</p>
+        </div>
+    </div>
+</section>
+
 @endsection

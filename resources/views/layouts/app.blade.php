@@ -132,9 +132,8 @@
         </div>
     </footer>
 
-    <!-- CHATBOT -->
     <div class="chatbox">
-        <div class="chatbox__support" style="display:none;">
+        <div class="chatbox__support">
             <div class="chatbox__header">
                 <div class="chatbox__image--header">
                     <img src="/images/image.png" alt="image">
@@ -185,7 +184,7 @@
     const chatSupport = document.querySelector(".chatbox__support");
 
     chatButton.addEventListener("click", function () {
-        chatSupport.style.display = (chatSupport.style.display === "block") ? "none" : "block";
+        chatSupport.classList.toggle("chatbox--active");
     });
 
     $("#form_submit_chat").on("submit", function(e) {
