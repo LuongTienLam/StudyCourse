@@ -65,4 +65,22 @@ class Kernel extends HttpKernel
         'isAdmin' => \App\Http\Middleware\CheckRoleIsAdmin::class,
         'isManager' => \App\Http\Middleware\CheckRoleIsManage::class,
     ];
+
+    /**
+     * Get the bootstrap classes for the application.
+     *
+     * @return array
+     */
+    protected function bootstrappers()
+    {
+        $bootstrappers = parent::bootstrappers();
+
+        // Inject custom bootstrapper to suppress deprecation warnings on PHP 8.1+
+        $index = array_search(\Illuminate\Foundation\Bootstrap\HandleExceptions::class, $bootstrappers);
+        if ($index !== false) {
+            array_splice($bootstrappers, $index + 1, 0, \App\Bootstrap\SuppressDeprecations::class);
+        }
+
+        return $bootstrappers;
+    }
 }
